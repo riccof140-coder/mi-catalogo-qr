@@ -25,13 +25,13 @@ st.markdown("""
 def load_data():
     data = {
         'id': ['p1', 'p2', 'p3'],
-        'nombre': ['Café de Especialidad', 'Taza de Cerámica', 'Molino Manual'],
+        'nombre': ['Humor envove', 'Crema care frutos rojos', 'Crema ekos maracuya'],
         'precio': [250.00, 120.00, 450.00],
-        'stock': [15, 0, 5],
+        'stock': [15, 3, 5],
         'imagen': [
-            'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=500',
-            'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=500',
-            'https://images.unsplash.com/photo-1585445490387-f47934b73b54?w=500'
+            'https://www.bing.com/images/search?view=detailV2&ccid=nK7uvgHG&id=061E04D9A13753EC27A79EB59CF2D81D136C9A76&thid=OIP.nK7uvgHG7BjsV0WDx8RVqwHaHa&mediaurl=https%3a%2f%2ffimgs.net%2fmdimg%2fsecundar%2fo.132246.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.9caeeebe01c6ec18ec574583c7c455ab%3frik%3ddppsEx3Y8py1ng%26pid%3dImgRaw%26r%3d0&exph=1200&expw=1200&q=humor+envolve+natura&FORM=IRPRST&ck=23C67B4B07FF60CDA5D4D4E01D32263A&selectedIndex=0&itb=0&ajaxhist=0&ajaxserp=0',
+            'https://production.na01.natura.com/on/demandware.static/-/Sites-avon-ar-storefront-catalog/default/dw703667e5/AVNARG-711408_1.jpg',
+            'https://stockings.cl/wp-content/uploads/2024/03/Pulma-Hidratante-para-manos-Ekos-Maracuya_Webp.webp'
         ]
     }
     return pd.DataFrame(data)
@@ -122,5 +122,4 @@ with st.sidebar:
         
         if st.button("Vaciar carrito"):
             st.session_state.carrito = []
-
             st.rerun()
