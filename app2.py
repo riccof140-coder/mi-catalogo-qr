@@ -118,7 +118,7 @@ with st.sidebar:
         if st.button("Finalizar por WhatsApp", type="primary"):
             mensaje = "Hola! Quiero pedir:%0A" + "%0A".join([f"- {p['nombre']}" for p in st.session_state.carrito])
             # Cambia el número abajo por el tuyo
-            st.link_button("🚀 Enviar a WhatsApp", f"https://wa.me/123456789?text={mensaje}")
+            st.link_button("🚀 Enviar a WhatsApp", f"https://wa.me/2634303887?text={mensaje}")
         
         if st.button("Vaciar carrito"):
             st.session_state.carrito = []
