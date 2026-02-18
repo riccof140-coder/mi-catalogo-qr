@@ -46,6 +46,8 @@ if 'carrito' not in st.session_state:
 params = st.query_params
 
 # A. VISTA DE DETALLE (Cuando escanean un QR)
+# Cambia el localhost por tu URL real de internet
+link_final = f"https://mi-catalogo-qr-4h2epn6qlabwgnpwuh5qjp.streamlit.app/{row['id']}"
 if "id" in params:
     prod_id = params["id"]
     producto = df[df['id'] == prod_id]
@@ -122,5 +124,4 @@ with st.sidebar:
         
         if st.button("Vaciar carrito"):
             st.session_state.carrito = []
-
             st.rerun()
