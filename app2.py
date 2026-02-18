@@ -29,7 +29,7 @@ def load_data():
         'precio': [250.00, 120.00, 450.00],
         'stock': [15, 3, 5],
         'imagen': [
-            'https://www.bing.com/images/search?view=detailV2&ccid=nK7uvgHG&id=061E04D9A13753EC27A79EB59CF2D81D136C9A76&thid=OIP.nK7uvgHG7BjsV0WDx8RVqwHaHa&mediaurl=https%3a%2f%2ffimgs.net%2fmdimg%2fsecundar%2fo.132246.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.9caeeebe01c6ec18ec574583c7c455ab%3frik%3ddppsEx3Y8py1ng%26pid%3dImgRaw%26r%3d0&exph=1200&expw=1200&q=humor+envolve+natura&FORM=IRPRST&ck=23C67B4B07FF60CDA5D4D4E01D32263A&selectedIndex=0&itb=0&ajaxhist=0&ajaxserp=0',
+            'https://solpeeling.jp/uploads/images/2022/06/2301-1-1654991351mty1ndk5mtm1mq.jpg',
             'https://production.na01.natura.com/on/demandware.static/-/Sites-avon-ar-storefront-catalog/default/dw703667e5/AVNARG-711408_1.jpg',
             'https://stockings.cl/wp-content/uploads/2024/03/Pulma-Hidratante-para-manos-Ekos-Maracuya_Webp.webp'
         ]
@@ -122,4 +122,5 @@ with st.sidebar:
         
         if st.button("Vaciar carrito"):
             st.session_state.carrito = []
+
             st.rerun()
