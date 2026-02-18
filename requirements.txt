@@ -1,0 +1,7 @@
+streamlit
+pandas
+qrcode
+pillow
+reportlab
+opencv-python-headless
+st-gsheets-connection
